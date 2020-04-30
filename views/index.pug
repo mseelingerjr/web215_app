@@ -1,0 +1,15 @@
+extends layout
+
+block content
+
+  if users.length
+    table.listing-table.table-striped
+      tr
+        th Name
+        th Email
+      each user in users
+        tr
+          td= user.name
+          td= user.email
+  else
+    p No signups yet :(

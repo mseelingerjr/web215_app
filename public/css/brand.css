@@ -1,0 +1,163 @@
+/*****Color Palette*****/
+/*
+very light blue: #f0f4f7
+greyish tan: #c8beb9
+yellowish tan: #fac57d
+red: #a81817
+green: #344d2f
+
+font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Cantata One', serif;
+*/
+
+html{
+    height: 100vh;
+}
+
+/*********Body/Background*********/
+body{
+    margin: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #f0f4f7;
+    background-color: #fac57d;
+    font-size: 1.2em;
+    position: relative;
+  }
+  
+  #container{
+    background-color: #344d2f;
+    margin: 0 auto 0 auto;
+    width: 80%;
+    min-height: 100vh;
+    display: block;
+    position: relative;
+    clear: both;
+    -webkit-box-shadow: 3px 3px 5px 12px #f0f4f7;
+    -moz-box-shadow:    3px 3px 5px 12px #f0f4f7;
+    box-shadow:         3px 3px 5px 12px #f0f4f7;
+  }
+
+  header{
+    padding: 10px;
+    display: block;
+  }
+
+  header h1{
+      display: inline-block;
+  }
+
+  .logo{
+      display: inline-block;
+  }
+
+  #banner{
+      margin: 0 auto 0 auto;
+      width: 350px;
+  }
+
+  nav a, nav span{
+      text-decoration: none;
+      border: 2px solid #344d2f;
+      line-height: 2;
+  }
+
+  nav span:hover, .nav-links:hover{
+      border: 2px solid #fac57d;
+      background-color: #a81817;
+  }
+  
+  main {
+      margin: 20px;
+  }
+  
+  main ul{
+      list-style-type: none;
+  }
+
+  #main_contents{ 
+    display: block;
+    min-height: 300px;
+  }
+  
+  h1{
+      text-align: center;
+      color: #fac57d;
+      font-family: 'Cantata One', serif;
+  }
+  
+  a {
+      color: #f0f4f7;
+  }
+  
+  
+  figure img{
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+  }
+  
+  figure figcaption{
+      text-align: center;
+      font-style: italic;
+  }
+  
+  #work-links {
+      text-align: center;
+  }
+  
+  li{
+      margin-bottom: 5px;
+  }
+
+  .tagline{
+      font-style: italic;
+  }
+
+  #tagline{
+    text-align: center;
+    font-style: italic;
+    font-size: 0.75em;
+    position: relative;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    clear: both;
+}
+
+#date{
+    text-align: center;
+    margin: 0 auto 0 auto;
+}
+
+.hidden-class{
+    display: none;
+}
+
+  /*********Footer Area*********/
+footer {  
+      position: relative;
+      display: block;
+      padding-bottom: 10px;
+      bottom: 0;
+      border-radius: 15px;
+      width: 182px;
+      margin: 0 auto 0 auto;
+      text-align: center;
+  }
+  
+footer a{
+      text-decoration: none;
+  }
+  
+footer img{
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0;
+      position: relative;
+      bottom: 0;
+      display: inline-block;
+
+  }
+  
+  
+  
