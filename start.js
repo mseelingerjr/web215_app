@@ -3,7 +3,7 @@ require('./models/user');
 const mongoose = require('mongoose');
 const app = require('./app');
 
-mongoose.connect('mongodb+srv://m001-students:web215@web215-um2om.mongodb.net/signup-form?retryWrites=true&w=majority', {
+mongoose.connect('mongodb+srv://m001-students:web215@web215-um2om.mongodb.net/signup-form', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
