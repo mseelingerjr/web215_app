@@ -19,4 +19,4 @@ app.listen(port);
 module.exports = app;
 
 var mongoose = require('mongoose');
-mongoose.connect(process.env.DATABASE);
+mongoose.connect(process.env.DATABASE, {useNewUrlParser: true});
