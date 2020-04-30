@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use('/', routes);
 app.use(express.static('public'));
 
-const port = 3000;
+const port = process.env.PORT;
 app.listen(port);
 
 module.exports = app;
