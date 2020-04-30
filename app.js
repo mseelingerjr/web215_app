@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const path = require('path');
 const routes = require('./routes/index');
@@ -12,4 +13,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use('/', routes);
 app.use(express.static('public'));
 
+const port = 3000;
+app.listen(port);
+
 module.exports = app;
+
+var mongoose = require('mongoose');
+mongoose.connect(process.env.DATABASE);
