@@ -2,21 +2,27 @@ const express = require('express');
 const mongoose = require('mongoose');
 const router = express.Router();
 const User = mongoose.model('User');
+const path = require('path');
+const auth = require('http-auth');
+
+const basic = auth.basic({
+  file: path.join(__dirname, '../users.htpasswd'),
+});
 
 const { check, validationResult } = require('express-validator');
 
 
-router.get('/', (req, res) => {
+router.get('/', basic.check((req, res) => {
   res.render('form', { title: 'Registration form' });
-});
+}));
 
-router.get('/users', (req, res) => {
+router.get('/users', basic.check((req, res) => {
   User.find()
     .then((users) =>{
       res.render('index', {title: 'User Signups', users });
     })
     .catch(() => {res.send('Sorry! Something went wrong.'); });
-});
+}));
 
 router.post(
   '/',
@@ -50,3 +56,4 @@ router.post(
   );
 
 module.exports = router;
+
