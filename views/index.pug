@@ -7,9 +7,12 @@ block content
       tr
         th Name
         th Email
+        th Delete
       each user in users
         tr
           td= user.name
           td= user.email
+          td
+            a(href='/users/delete?id='+user.id) Delete
   else
     p No signups yet :(
